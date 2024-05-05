@@ -15,7 +15,7 @@ Walaupun `println!()` dijalankan setelah baris kode `spawner.spawn( async { ... 
 
 Perhatikan bahwa _string_ `done!` muncul kedua setelah _string_ `done2!` padahal di kode urutannya sebaliknya. Mengapa? Hal ini karena mereka berjalan secara _concurrently_. Ketiga _task_ dapat berjalan secara bersamaan tanpa menunggu satu sama lain sehingga tidak ada jaminan task akan selesai dalam urutan yang sama dengan urutan kode.
 
-**Removing `drop(spawner); statement:**
+**Removing `drop(spawner);` statement:**
 
 <img src="img/img3.png">
 
